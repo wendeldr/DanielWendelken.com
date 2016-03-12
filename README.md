@@ -1,2 +1,0 @@
-# DanielWendelken.com
-Personal Website
