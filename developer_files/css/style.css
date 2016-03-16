@@ -1,4 +1,92 @@
+/*
+* Style.scss
+*
+* The order of files reflects the natural CSS cascade of specificity. We start with global variables and work down to the most specific classes.
+*
+* [1]  Frameworks
+* 		- External framrworks, Susy, Breakpoint and other SCSS systems.If you are using a framrwork, include it directly rather than a GEM.
+* [2]  Config
+* 		- Vairables at a global level, grid settings and font and colour vairables required for the site.
+* [3]  Core
+* 		- Mixinss, normalise and helper classes. Only mixins in the mixin file, helpers should comprise only of classes.
+* [4]  Base
+* 		- Typography, lists, forms, tables. Basic styling WITHOUT classes.
+* [5]  Vendor
+* 		- Vendor CSS from plugins or other frameworks.
+* [6]  Layout
+* 		- The core site layout based on grids and breakpoints.
+* [7]  Objects
+* 	    - Object abstractions that combine often repeated layouts.
+* [8]  Components
+* 	    - The primary elements of the site, created from objects and layouts,
+*         these define the elements that reflect the design and UI of the site.
+* [9]  States
+* 	    - Page based alterations to the layout, design or UI.
+* [10] Temp
+* 	    - Styles that are either temporary during developlent or require work to re-factor a more appropriate
+* 	      part of the framework.
+*/
 
+/*
+ * [1] Vendor - Frameworks
+ *
+ * https://github.com/at-import/breakpoint
+ * https://github.com/douglasduteil/fake-breakpoint-slicer
+ * http://albertogasparin.it/articles/2014/09/breakpoint-library-and-libsass/
+ * https://github.com/ericam/susy/pull/406
+*/
+
+/*
+ * [2] Config
+*/
+
+/*
+ * [3] Core
+*/
+
+/* Mixins
+* [1] Rems and Ems
+* [2] Psuedo Blocks
+* [3] Hide visibility (accessible)
+* [4] Prevent webkit GPU flash
+* [5] Breakpoint Slicer mixin (with susy with-layout())
+* [6] Vertical-align
+*/
+
+/*
+* [1] Property handling with ems and rems
+* Ems = font-size: em(20px);
+* Rems = @include rem-property(font-size, 24px) or rem-property(line-height, 24px)
+*/
+
+/*
+* [2] Psudo Blocks
+* Quick method to create psudo blocks
+*/
+
+/*
+* [3] Hides an element visually, but makes it still available for screenreaders
+*/
+
+/*
+* [4] Prevent webkit GPU flash
+*/
+
+/*
+* [5]Breakpoint Slicer mixin wrappers (with susy with-layout())
+*/
+
+/*
+* [6]Vertical-align
+*/
+
+/*! normalize.css v3.0.2 | MIT License | git.io/normalize */
+
+/**
+ * 1. Set default font family to sans-serif.
+ * 2. Prevent iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
 
 html {
   font-family: sans-serif;
