@@ -8,7 +8,7 @@ var app = express();
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(express.static(path.join(__dirname, 'views')));
 app.use(express.logger('dev'));
-app.use(express.bodyParser());
+app.use(express.body-parser());
 app.use(express.methodOverride());
 app.use(express.favicon(__dirname + '/public/img/icon.ico'));
 
