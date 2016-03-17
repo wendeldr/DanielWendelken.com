@@ -7,11 +7,10 @@ var http = require('http'),
 var app = express();
 
 app.use(express.static(path.join(__dirname, 'public')));
-app.use(express.static(path.join(__dirname, 'views')));
 app.use(favicon(__dirname + '/public/img/icon.ico'));
 
 app.get('/', function(req, res) {
-  res.sendFile(path.join(__dirname, 'views/DanielWendelken.html'));
+  res.sendFile(path.join(__dirname, 'public/DanielWendelken.html'));
 });
 
 http.createServer(app).listen(port, function() {
