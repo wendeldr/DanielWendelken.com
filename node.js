@@ -11,7 +11,7 @@ app.use(express.static(path.join(__dirname, 'views')));
 app.use(favicon(__dirname + '/public/img/icon.ico'));
 
 app.get('/', function(req, res) {
-  res.sendFile('./views/DanielWendelken.html');
+  res.sendFile(path.join(__dirname, 'views/DanielWendelken.html'));
 });
 
 http.createServer(app).listen(port, function() {
