@@ -14,7 +14,7 @@ app.get('/', function(req, res) {
 });
 
 app.get('/resume/download', function(req, res){
-  var file = __dirname + '/public/Files/2016-Resume-DanielWendelken.pdf';
+  var file = __dirname + '/public/files/2016-Resume-DanielWendelken.pdf';
   res.download(file); // Set disposition and send it.
 });
 
