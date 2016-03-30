@@ -1028,7 +1028,10 @@ td, th {
   -moz-box-sizing: border-box;
   box-sizing: border-box
 }
-
+html {
+  font-size: 10px;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0)
+}
 body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 14px;
@@ -1433,6 +1436,8 @@ pre code {
   }
 }
 .container-fluid {
+  padding-right: 15px;
+  padding-left: 15px;
   margin-right: auto;
   margin-left: auto
 }
@@ -3647,7 +3652,6 @@ select[multiple].input-group-sm>.form-control, select[multiple].input-group-sm>.
   line-height: 20px
 }
 .navbar-brand:focus, .navbar-brand:hover {
-
   text-decoration: none
 }
 .navbar-brand>img {
@@ -3853,8 +3857,8 @@ select[multiple].input-group-sm>.form-control, select[multiple].input-group-sm>.
   }
 }
 .navbar-default {
-  background-color: #fff;
-  border-color: #fff
+  background-color: #f8f8f8;
+  border-color: #e7e7e7
 }
 .navbar-default .navbar-brand {
   color: #777
