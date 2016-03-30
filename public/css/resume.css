@@ -19,3 +19,12 @@ hr {
     display: table;
     margin: 0 auto;
 }
+
+a {
+  color: #000;
+}
+
+a:active, a:hover, a:visited {
+  outline: 0;
+  text-decoration: none;
+}
